@@ -86,7 +86,8 @@ key.properties
 *.bak
 
 # ==========================================
-# Pertemuan 04 (Hanya track folder lib/)
+# Modul Praktikum (Hanya track folder lib/)
+# Berlaku untuk semua folder pertemuan (01, 02, 03, 04, dst.)
 # ==========================================
-pertemuan04/*
-!pertemuan04/lib/
+pertemuan*/*
+!pertemuan*/lib/
