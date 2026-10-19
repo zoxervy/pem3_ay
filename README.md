@@ -52,11 +52,21 @@ Repositori ini berisi tugas dan praktikum mata kuliah **Pemrograman 3 (Mobile)**
 
 ---
 
+### 📌 Pertemuan 04: Form Input & Navigasi Multi-Halaman
+* **Fokus**: Penerapan berbagai komponen input form, kontrol seleksi (*selection controls*), pengiriman data (*passing data*) antar halaman, dan dialog konfirmasi.
+* **Yang Dilakukan**:
+  * **Model Data Bersama**: Menggunakan class `DataPendaftaran` untuk menampung dan mentransfer data formulir antar layar.
+  * **Halaman 1 (Identitas & Peminatan)**: Validasi formulir (`FormState`), input teks (`TextFormField` untuk Nama & Email), dan menu dropdown (`DropdownButtonFormField`).
+  * **Halaman 2 (Preferensi & Kesiapan)**: Pilihan tingkat keahlian (`RadioGroup` / `Radio`), pilihan multi-perlengkapan (`Checkbox`), dan sakelar notifikasi WhatsApp (`Switch`).
+  * **Halaman 3 (Ringkasan & Konfirmasi)**: Menampilkan review seluruh data pendaftaran, validasi checkbox persetujuan syarat, dan popup bukti registrasi berhasil (`showDialog` / E-Pass) serta tombol kembali ke awal (`Navigator.popUntil`).
+
+---
+
 ## 🚀 Cara Menjalankan
 
 1. Masuk ke direktori pertemuan yang ingin dijalankan:
    ```bash
-   cd pertemuan01   # ganti sesuai pertemuan: pertemuan01, pertemuan02, atau pertemuan03
+   cd pertemuan01   # ganti sesuai pertemuan: pertemuan01, pertemuan02, pertemuan03, atau pertemuan04
    ```
 2. Pasang dependensi dan jalankan aplikasi:
    ```bash
