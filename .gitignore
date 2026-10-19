@@ -84,3 +84,9 @@ key.properties
 *.log
 *.tmp
 *.bak
+
+# ==========================================
+# Pertemuan 04 (Hanya track folder lib/)
+# ==========================================
+pertemuan04/*
+!pertemuan04/lib/
