@@ -22,6 +22,9 @@ Repositori ini berisi tugas dan praktikum mata kuliah **Pemrograman 3 (Mobile)**
   * Membuat halaman profil data diri pada berkas `view/data_diri.dart`.
   * Menampilkan foto profil menggunakan `CircleAvatar`.
   * Menampilkan informasi diri (Nama, NIM, Pekerjaan, Email, Prodi, Semester, Kampus) secara rapi menggunakan kombinasi widget `Card`, `ListTile`, dan `Icon`.
+* **Screenshot**:
+  <br>
+  <img src="screenshots/pertemuan01.png" width="550" alt="Screenshot Pertemuan 01">
 
 ---
 
@@ -34,6 +37,9 @@ Repositori ini berisi tugas dan praktikum mata kuliah **Pemrograman 3 (Mobile)**
     * **Kurang (`-`)**: Menurunkan angka (`_counter--`).
     * **Reset (`refresh`)**: Mengembalikan angka ke `0`.
   * Mengatur `heroTag` unik pada masing-masing tombol agar tidak terjadi konflik animasi Hero.
+* **Screenshot**:
+  <br>
+  <img src="screenshots/pertemuan02.png" width="550" alt="Screenshot Pertemuan 02">
 
 ---
 
@@ -49,6 +55,9 @@ Repositori ini berisi tugas dan praktikum mata kuliah **Pemrograman 3 (Mobile)**
     * `Positioned`: Mengatur koordinat elemen berdasarkan jarak tepi (`top`, `left`, dll).
     * `Align`: Menempatkan elemen ke arah/sudut tertentu (`topLeft`, `center`, `bottomRight`, dll).
     * Menguji konsep urutan lapisan tumpukan (elemen yang ditulis terakhir akan tampil paling depan).
+* **Screenshot**:
+  <br>
+  <img src="screenshots/pertemuan03.png" width="360" alt="Screenshot Pertemuan 03">
 
 ---
 
@@ -59,6 +68,13 @@ Repositori ini berisi tugas dan praktikum mata kuliah **Pemrograman 3 (Mobile)**
   * **Halaman 1 (Identitas & Peminatan)**: Validasi formulir (`FormState`), input teks (`TextFormField` untuk Nama & Email), dan menu dropdown (`DropdownButtonFormField`).
   * **Halaman 2 (Preferensi & Kesiapan)**: Pilihan tingkat keahlian (`RadioGroup` / `Radio`), pilihan multi-perlengkapan (`Checkbox`), dan sakelar notifikasi WhatsApp (`Switch`).
   * **Halaman 3 (Ringkasan & Konfirmasi)**: Menampilkan review seluruh data pendaftaran, validasi checkbox persetujuan syarat, dan popup bukti registrasi berhasil (`showDialog` / E-Pass) serta tombol kembali ke awal (`Navigator.popUntil`).
+* **Screenshot**:
+
+  | Langkah 1: Identitas & Peminatan | Langkah 2: Preferensi & Kesiapan |
+  | :---: | :---: |
+  | <img src="screenshots/pertemuan04-1.png" width="400" alt="Langkah 1: Identitas & Peminatan"> | <img src="screenshots/pertemuan04-2.png" width="400" alt="Langkah 2: Preferensi & Kesiapan"> |
+  | **Langkah 3: Ringkasan Data** | **Dialog Bukti Registrasi (E-Pass)** |
+  | <img src="screenshots/pertemuan04-3.png" width="400" alt="Langkah 3: Ringkasan Data"> | <img src="screenshots/pertemuan04-4.png" width="400" alt="Dialog Bukti Registrasi"> |
 
 ---
 
