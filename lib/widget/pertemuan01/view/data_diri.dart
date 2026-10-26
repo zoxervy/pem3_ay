@@ -6,10 +6,7 @@ class DataDiriView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Data Diri'),
-        centerTitle: true,
-      ),
+      appBar: AppBar(title: const Text('Data Diri'), centerTitle: true),
       body: const Padding(
         padding: EdgeInsets.all(16.0),
         child: Column(
@@ -22,10 +19,7 @@ class DataDiriView extends StatelessWidget {
             SizedBox(height: 8),
             Text(
               'Tempat foto nanti',
-              style: TextStyle(
-                fontSize: 12,
-                color: Colors.grey,
-              ),
+              style: TextStyle(fontSize: 12, color: Colors.grey),
             ),
             SizedBox(height: 16),
             Card(

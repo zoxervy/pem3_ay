@@ -1,34 +1,13 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class Pertemuan02 extends StatefulWidget {
+  const Pertemuan02({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Praktikum Flutter Yusuf',
-      theme: ThemeData(
-        colorScheme: .fromSeed(seedColor: const Color.fromARGB(255, 103, 0, 0)),
-      ),
-      home: const MyHomePage(title: 'Praktikum Flutter Yusuf'),
-    );
-  }
+  State<Pertemuan02> createState() => _Pertemuan02State();
 }
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
-
-  final String title;
-
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
+class _Pertemuan02State extends State<Pertemuan02> {
   int _counter = 0;
 
   void _tambahCounter() {

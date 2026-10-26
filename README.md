@@ -78,14 +78,33 @@ Repositori ini berisi tugas dan praktikum mata kuliah **Pemrograman 3 (Mobile)**
 
 ---
 
+## 📂 Struktur Proyek Terpadu
+
+Seluruh modul praktikum telah disatukan ke dalam satu aplikasi Flutter terpadu dengan sistem dashboard navigasi:
+
+```text
+lib/
+├── main.dart                  # Titik masuk aplikasi & tema
+├── menu_utama.dart            # Dashboard navigasi utama
+└── widget/
+    ├── pertemuan01/           # Praktikum 01: UI Biodata Diri
+    ├── pertemuan02/           # Praktikum 02: Counter App
+    ├── pertemuan03/           # Praktikum 03: Linear & Relative Layout
+    └── pertemuan04/           # Praktikum 04: Form Input & Navigasi Multi-Halaman
+```
+
+---
+
 ## 🚀 Cara Menjalankan
 
-1. Masuk ke direktori pertemuan yang ingin dijalankan:
-   ```bash
-   cd pertemuan01   # ganti sesuai pertemuan: pertemuan01, pertemuan02, pertemuan03, atau pertemuan04
-   ```
-2. Pasang dependensi dan jalankan aplikasi:
+1. Pasang dependensi Flutter:
    ```bash
    flutter pub get
+   ```
+
+2. Jalankan aplikasi:
+   ```bash
    flutter run
    ```
+
+3. Pada layar aplikasi, pilih tombol pertemuan yang ingin diuji langsung dari **Menu Utama**.

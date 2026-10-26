@@ -10,8 +10,6 @@
 
 import 'package:flutter/material.dart';
 
-void main() => runApp(const MyApp());
-
 // ------------------------------------------------------------
 // MODEL DATA BERSAMA
 // ------------------------------------------------------------
@@ -28,15 +26,13 @@ class DataPendaftaran {
 // ------------------------------------------------------------
 // APLIKASI UTAMA DENGAN TEMA CLEAN, MODERN & CENTERED
 // ------------------------------------------------------------
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class Pertemuan04 extends StatelessWidget {
+  const Pertemuan04({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Pendaftaran Workshop Coding',
-      theme: ThemeData(
+    return Theme(
+      data: ThemeData(
         useMaterial3: true,
         colorSchemeSeed: Colors.indigo,
         scaffoldBackgroundColor: const Color(0xFFF8FAFC),
@@ -71,7 +67,7 @@ class MyApp extends StatelessWidget {
           ),
         ),
       ),
-      home: const HalamanSatu(),
+      child: const HalamanSatu(),
     );
   }
 }

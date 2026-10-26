@@ -1,23 +1,5 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-      ),
-      home: const HalamanLayout(),
-    );
-  }
-}
 
 Widget kotak(String huruf, Color warna) {
   return Container(
@@ -39,8 +21,8 @@ Widget kotak(String huruf, Color warna) {
   );
 }
 
-class HalamanLayout extends StatelessWidget {
-  const HalamanLayout({super.key});
+class Pertemuan03 extends StatelessWidget {
+  const Pertemuan03({super.key});
 
   @override
   Widget build(BuildContext context) {

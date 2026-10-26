@@ -86,8 +86,11 @@ key.properties
 *.bak
 
 # ==========================================
-# Modul Praktikum (Hanya track folder lib/)
-# Berlaku untuk semua folder pertemuan (01, 02, 03, 04, dst.)
+# Hanya track folder lib/ (plus pubspec, README, .gitignore, screenshots)
 # ==========================================
-pertemuan*/*
-!pertemuan*/lib/
+/*
+!/lib/
+!/pubspec.yaml
+!/README.md
+!/.gitignore
+!/screenshots/
