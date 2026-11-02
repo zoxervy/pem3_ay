@@ -1,6 +1,6 @@
-# Dokumentasi Praktikum Pemrograman3 (Flutter)
+# Dokumentasi Praktikum Pemrograman 3 (Flutter) - Versi Pak Made Yadi
 
-Repositori ini berisi tugas dan praktikum mata kuliah **Pemrograman 3 (Mobile)** menggunakan Flutter.
+Repositori ini berisi kumpulan modul praktikum mata kuliah **Pemrograman 3 (Mobile)** berbasis Flutter untuk **Versi Pak Made Yadi**, yang telah diintegrasikan ke dalam satu aplikasi terpadu dengan dashboard navigasi menu utama.
 
 ---
 
@@ -11,70 +11,77 @@ Repositori ini berisi tugas dan praktikum mata kuliah **Pemrograman 3 (Mobile)**
 - **Program Studi**: S1 Ilmu Komputer
 - **Semester**: 3
 - **Kampus**: Universitas Bumigora
+- **Dosen Pengampu**: Pak Made Yadi
 
 ---
 
-## 📝 Ringkasan Praktikum
+## 📝 Ringkasan Praktikum (Pertemuan 01 - 07)
 
 ### 📌 Pertemuan 01: UI Biodata Diri (StatelessWidget)
-* **Fokus**: Pengenalan dasar Flutter dan pembuatan antarmuka statis (*Stateless*).
-* **Yang Dilakukan**:
-  * Membuat halaman profil data diri pada berkas `view/data_diri.dart`.
-  * Menampilkan foto profil menggunakan `CircleAvatar`.
-  * Menampilkan informasi diri (Nama, NIM, Pekerjaan, Email, Prodi, Semester, Kampus) secara rapi menggunakan kombinasi widget `Card`, `ListTile`, dan `Icon`.
-* **Screenshot**:
-  <br>
-  <img src="screenshots/pertemuan01.png" width="550" alt="Screenshot Pertemuan 01">
+* **Fokus**: Pengenalan dasar Flutter dan pembuatan antarmuka profil statis (*Stateless*).
+* **Komponen & Berkas**: `lib/widget/pertemuan01/view/data_diri.dart`
+* **Fitur**:
+  * Menampilkan foto profil menggunakan widget `CircleAvatar`.
+  * Menampilkan identitas mahasiswa (Nama, NIM, Pekerjaan, Email, Prodi, Semester, Perguruan Tinggi) menggunakan kombinasi widget `Card`, `ListTile`, dan `Icon`.
 
 ---
 
-### 📌 Pertemuan 02: Counter App (StatefulWidget)
-* **Fokus**: Pengenalan *State Management* dasar menggunakan `StatefulWidget` dan `setState()`.
-* **Yang Dilakukan**:
-  * Membuat aplikasi penghitung interaktif dengan variabel nilai `_counter`.
-  * Menyediakan 3 tombol kontrol (*FloatingActionButton*):
-    * **Tambah (`+`)**: Menaikkan angka (`_counter++`).
-    * **Kurang (`-`)**: Menurunkan angka (`_counter--`).
-    * **Reset (`refresh`)**: Mengembalikan angka ke `0`.
-  * Mengatur `heroTag` unik pada masing-masing tombol agar tidak terjadi konflik animasi Hero.
-* **Screenshot**:
-  <br>
-  <img src="screenshots/pertemuan02.png" width="550" alt="Screenshot Pertemuan 02">
+### 📌 Pertemuan 02: Linear Layout (Column & Row)
+* **Fokus**: Memahami dasar susunan tata letak linier searah di Flutter.
+* **Komponen & Berkas**: `lib/widget/pertemuan02/pertemuan02.dart`
+* **Fitur**:
+  * **Column (Vertikal)**: Menyusun elemen secara vertikal (atas ke bawah) menggunakan serangkaian kotak warna beridentitas teks (A, B, C).
+  * **Row (Horizontal)**: Menyusun elemen secara menyamping (kiri ke kanan) serta pengaturan perataan dan dekorasi container.
 
 ---
 
 ### 📌 Pertemuan 03: Layouting (Linear & Relative Layout)
-* **Fokus**: Memahami konsep tata letak antarmuka di Flutter (Linear Layout dan Relative Layout).
-* **Yang Dilakukan**:
-  * Membuat widget bantu `kotak` untuk memvisualisasikan posisi elemen.
-  * **Linear Layout (Satu Arah)**:
-    * `Column`: Menyusun elemen secara vertikal (atas ke bawah).
-    * `Row`: Menyusun elemen secara horizontal (kiri ke kanan) serta eksplorasi perataan dengan `mainAxisAlignment: MainAxisAlignment.spaceEvenly`.
-  * **Relative Layout (Tumpukan / Bebas)**:
-    * `Stack`: Menumpuk elemen satu di atas yang lain.
-    * `Positioned`: Mengatur koordinat elemen berdasarkan jarak tepi (`top`, `left`, dll).
-    * `Align`: Menempatkan elemen ke arah/sudut tertentu (`topLeft`, `center`, `bottomRight`, dll).
-    * Menguji konsep urutan lapisan tumpukan (elemen yang ditulis terakhir akan tampil paling depan).
-* **Screenshot**:
-  <br>
-  <img src="screenshots/pertemuan03.png" width="360" alt="Screenshot Pertemuan 03">
+* **Fokus**: Eksplorasi mendalam tata letak linier dan tata letak tumpukan relatif.
+* **Komponen & Berkas**: `lib/widget/pertemuan03/pertemuan03.dart`
+* **Fitur**:
+  * Membuat widget bantu `kotak` dengan warna dan teks custom.
+  * **Linear Layout**: Demonstrasi `Column` dan `Row` dengan variasi perataan `MainAxisAlignment.spaceEvenly`.
+  * **Relative Layout**: Penggunaan `Stack` untuk menumpuk widget secara berlapis, dipadukan dengan `Positioned` (koordinat absolut) dan `Align` untuk penempatan di berbagai sudut layar.
 
 ---
 
-### 📌 Pertemuan 04: Form Input & Navigasi Multi-Halaman
-* **Fokus**: Penerapan berbagai komponen input form, kontrol seleksi (*selection controls*), pengiriman data (*passing data*) antar halaman, dan dialog konfirmasi.
-* **Yang Dilakukan**:
-  * **Model Data Bersama**: Menggunakan class `DataPendaftaran` untuk menampung dan mentransfer data formulir antar layar.
-  * **Halaman 1 (Identitas & Peminatan)**: Validasi formulir (`FormState`), input teks (`TextFormField` untuk Nama & Email), dan menu dropdown (`DropdownButtonFormField`).
-  * **Halaman 2 (Preferensi & Kesiapan)**: Pilihan tingkat keahlian (`RadioGroup` / `Radio`), pilihan multi-perlengkapan (`Checkbox`), dan sakelar notifikasi WhatsApp (`Switch`).
-  * **Halaman 3 (Ringkasan & Konfirmasi)**: Menampilkan review seluruh data pendaftaran, validasi checkbox persetujuan syarat, dan popup bukti registrasi berhasil (`showDialog` / E-Pass) serta tombol kembali ke awal (`Navigator.popUntil`).
-* **Screenshot**:
+### 📌 Pertemuan 04: List View Vertical
+* **Fokus**: Implementasi daftar bergulir vertikal untuk menampilkan banyak data secara efisien.
+* **Komponen & Berkas**: `lib/widget/pertemuan04/listview_vertical.dart`
+* **Fitur**:
+  * Menggunakan widget `ListView` vertikal yang dapat di-scroll lancar.
+  * Setiap item dirancang dalam bentuk kartu berwarna dengan `BorderRadius` melengkung dan teks bernomor item (`Item 1` s/d `Item 10`).
 
-  | Langkah 1: Identitas & Peminatan | Langkah 2: Preferensi & Kesiapan |
-  | :---: | :---: |
-  | <img src="screenshots/pertemuan04-1.png" width="400" alt="Langkah 1: Identitas & Peminatan"> | <img src="screenshots/pertemuan04-2.png" width="400" alt="Langkah 2: Preferensi & Kesiapan"> |
-  | **Langkah 3: Ringkasan Data** | **Dialog Bukti Registrasi (E-Pass)** |
-  | <img src="screenshots/pertemuan04-3.png" width="400" alt="Langkah 3: Ringkasan Data"> | <img src="screenshots/pertemuan04-4.png" width="400" alt="Dialog Bukti Registrasi"> |
+---
+
+### 📌 Pertemuan 05: List View Horizontal & Card dengan Gambar
+* **Fokus**: Implementasi daftar bergulir ke samping (*horizontal scroll*) serta manipulasi komponen `Card` bergambar.
+* **Komponen & Berkas**:
+  * `lib/widget/pertemuan05/listview_horizontal.dart` (List View Horizontal)
+  * `lib/widget/pertemuan05/card_network.dart` (Card Gambar URL & Assets)
+* **Fitur**:
+  * **ListView Horizontal**: Menampilkan deretan 15 kotak warna menyamping menggunakan properti `scrollDirection: Axis.horizontal`.
+  * **Card dengan Gambar**: Menampilkan kartu bergambar yang bersumber dari aset lokal (`assets/images/test1.jpg`) dan gambar daring melalui jaringan internet (`Image.network`).
+
+---
+
+### 📌 Pertemuan 06: Grid View (Multi-Kolom)
+* **Fokus**: Menata antarmuka berbasis kisi (*grid*) dengan kombinasi ikon, teks, dan gambar.
+* **Komponen & Berkas**: `lib/widget/pertemuan06/grid_view_update.dart` & `grid_view.dart`
+* **Fitur**:
+  * Menggunakan `GridView.count` dengan konfigurasi 2 kolom (`crossAxisCount: 2`).
+  * Mengatur jarak antar kisi menggunakan `crossAxisSpacing` dan `mainAxisSpacing`.
+  * Menampilkan variasi item berikon, item gambar dari aset lokal (`test1.jpg` dan `test2.jpg`), serta gambar dari internet URL.
+
+---
+
+### 📌 Pertemuan 07: Data Table
+* **Fokus**: Penyajian data tabular (baris dan kolom) yang rapi dan terstruktur.
+* **Komponen & Berkas**: `lib/widget/pertemuan07/data_table.dart`
+* **Fitur**:
+  * Menggunakan widget `DataTable` dengan pendefinisian kolom (`DataColumn`: No, NIM, Nama, Prodi).
+  * Pengisian baris data mahasiswa (`DataRow` dan `DataCell`).
+  * Dibungkus dengan `SingleChildScrollView` horizontal dan `ListView` vertikal agar tabel responsif dan tidak mengalami error *overflow* pada layar perangkat yang lebih kecil.
 
 ---
 
@@ -84,13 +91,18 @@ Seluruh modul praktikum telah disatukan ke dalam satu aplikasi Flutter terpadu d
 
 ```text
 lib/
-├── main.dart                  # Titik masuk aplikasi & tema
-├── menu_utama.dart            # Dashboard navigasi utama
+├── main.dart                  # Titik masuk aplikasi & tema Flutter
+├── menu_utama.dart            # Dashboard navigasi utama pertemuan 01 - 07
 └── widget/
     ├── pertemuan01/           # Praktikum 01: UI Biodata Diri
-    ├── pertemuan02/           # Praktikum 02: Counter App
+    ├── pertemuan02/           # Praktikum 02: Linear Layout (Column & Row)
     ├── pertemuan03/           # Praktikum 03: Linear & Relative Layout
-    └── pertemuan04/           # Praktikum 04: Form Input & Navigasi Multi-Halaman
+    ├── pertemuan04/           # Praktikum 04: List View Vertical
+    ├── pertemuan05/           # Praktikum 05: List View Horizontal & Card Image
+    ├── pertemuan06/           # Praktikum 06: Grid View (Multi-Kolom)
+    └── pertemuan07/           # Praktikum 07: Data Table (Tabel Data Mahasiswa)
+assets/
+└── images/                    # Aset gambar lokal (test1.jpg, test2.jpg)
 ```
 
 ---
@@ -107,4 +119,4 @@ lib/
    flutter run
    ```
 
-3. Pada layar aplikasi, pilih tombol pertemuan yang ingin diuji langsung dari **Menu Utama**.
+3. Pada menu utama aplikasi, pilih modul pertemuan yang ingin dibuka melalui tombol yang tersedia (Pertemuan 01 s/d 07).
