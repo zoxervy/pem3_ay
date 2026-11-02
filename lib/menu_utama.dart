@@ -3,6 +3,9 @@ import 'package:pem3_ay/widget/pertemuan01/pertemuan01.dart';
 import 'package:pem3_ay/widget/pertemuan02/pertemuan02.dart';
 import 'package:pem3_ay/widget/pertemuan03/pertemuan03.dart';
 import 'package:pem3_ay/widget/pertemuan04/pertemuan04.dart';
+import 'package:pem3_ay/widget/pertemuan05/pertemuan05.dart';
+import 'package:pem3_ay/widget/pertemuan06/pertemuan06.dart';
+import 'package:pem3_ay/widget/pertemuan07/pertemuan07.dart';
 
 class HalamanMenuUtama extends StatelessWidget {
   const HalamanMenuUtama({super.key});
@@ -14,7 +17,7 @@ class HalamanMenuUtama extends StatelessWidget {
         title: const Text('Menu Utama'),
         backgroundColor: Colors.blue,
       ),
-      body: Padding(
+      body: SingleChildScrollView(
         padding: const EdgeInsets.all(16),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -92,6 +95,55 @@ class HalamanMenuUtama extends StatelessWidget {
                 );
               },
             ),
+            const SizedBox(height: 15),
+            // Pertemuan 05
+            ElevatedButton.icon(
+              icon: const Icon(Icons.home),
+              label: const Text('Pertemuan 05'),
+              style: ElevatedButton.styleFrom(
+                padding: const EdgeInsets.symmetric(vertical: 16),
+                backgroundColor: Colors.yellow,
+              ),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (_) => const Pertemuan05()),
+                );
+              },
+            ),
+            const SizedBox(height: 15),
+            // Pertemuan 06
+            ElevatedButton.icon(
+              icon: const Icon(Icons.home),
+              label: const Text('Pertemuan 06'),
+              style: ElevatedButton.styleFrom(
+                padding: const EdgeInsets.symmetric(vertical: 16),
+                backgroundColor: Colors.yellow,
+              ),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (_) => const Pertemuan06()),
+                );
+              },
+            ),
+            const SizedBox(height: 15),
+            // Pertemuan 07
+            ElevatedButton.icon(
+              icon: const Icon(Icons.home),
+              label: const Text('Pertemuan 07'),
+              style: ElevatedButton.styleFrom(
+                padding: const EdgeInsets.symmetric(vertical: 16),
+                backgroundColor: Colors.yellow,
+              ),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (_) => const Pertemuan07()),
+                );
+              },
+            ),
+            const SizedBox(height: 15),
           ],
         ),
       ),

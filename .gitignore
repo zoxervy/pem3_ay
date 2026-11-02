@@ -86,10 +86,11 @@ key.properties
 *.bak
 
 # ==========================================
-# Hanya track folder lib/ (plus pubspec, README, .gitignore, screenshots)
+# Hanya track folder lib/, assets/ (plus pubspec, README, .gitignore, screenshots)
 # ==========================================
 /*
 !/lib/
+!/assets/
 !/pubspec.yaml
 !/README.md
 !/.gitignore
