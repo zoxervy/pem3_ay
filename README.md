@@ -1,6 +1,6 @@
-# Dokumentasi Praktikum Pemrograman3 (Flutter)
+# Dokumentasi Praktikum Pemrograman 3 (Flutter) - Versi Pak Gofur (Asdos)
 
-Repositori ini berisi tugas dan praktikum mata kuliah **Pemrograman 3 (Mobile)** menggunakan Flutter.
+Repositori ini berisi tugas dan praktikum mata kuliah **Pemrograman 3 (Mobile)** menggunakan Flutter untuk **Versi Pak Gofur (Asdos)** yang telah disatukan ke dalam satu aplikasi terpadu dengan dashboard navigasi menu utama.
 
 ---
 
@@ -11,6 +11,7 @@ Repositori ini berisi tugas dan praktikum mata kuliah **Pemrograman 3 (Mobile)**
 - **Program Studi**: S1 Ilmu Komputer
 - **Semester**: 3
 - **Kampus**: Universitas Bumigora
+- **Asisten Dosen / Pengampu**: Pak Gofur (Asdos)
 
 ---
 
